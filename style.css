@@ -1,0 +1,190 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(135, 86, 181);
+    color: rgb(18, 20, 20);
+    line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: lightyellow;
+  padding: 15px 30px;
+  color: lightseagreen;
+  flex-wrap: nowrap; 
+}
+.welcome-text {
+  font-size: 28px;
+  color: darkblue;
+  font-family: 'Playfair Display', serif;
+}
+.header-left h1 {
+  margin-right: 30px;
+  padding: left 1px;
+
+  text-align: left;
+   white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;          
+  color: darkblue; 
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-right nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 1px; 
+}
+
+.header-right nav ul li a {
+  text-decoration: none;
+  color: darkgreen;
+  background: whitesmoke;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+header-right nav ul li a:hover {
+  background: lightgreen;
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  background: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+nav ul li a {
+  color: lightgreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  transform: scale(1.05);
+  background-color: #e5ffe5;
+}
+
+nav ul li a:hover {
+  color: brown;
+}
+
+.profile-photo {
+  width: 200px;        
+  height: auto;
+  margin-top: 15px;    
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: brown;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: lightyellow;
+  margin: 10px auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+
+.skills-list li:hover {
+  background: lightgreen;
+  transform: scale(1.05);
+  color: brown;
+}
+.project {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  transition: all 0.3s ease-in-out;
+}
+.project:hover {
+  background-color: lightgreen;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.about-section {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin: 60px auto;
+  width: 85%;
+}
+.about-text {
+  width: 45%;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #4b0082;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-text span {
+  color: darkred;
+  font-style: italic;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+
+.about-photo img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  border: 6px solid lightyellow;
+  transition: transform 0.3s;
+}
+
+.about-photo img:hover {
+  transform: scale(1.05);
+}
