@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -676,3 +669,4 @@ footer {
 @media (max-width: 360px) {
   footer { padding: 15px 5px; }
 }
+
