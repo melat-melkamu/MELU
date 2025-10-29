@@ -263,7 +263,7 @@ max-width: 1000px;
 
 
 .logo {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: bold;
   color: brown;
 }
@@ -551,7 +551,7 @@ footer {
 }
 @media (max-width: 700px) {
   .welcome {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .navbar a {
@@ -565,7 +565,9 @@ footer {
 }
 @media (max-width: 768px) {
   
-  
+  .logo {
+    font-size: 16px; 
+  }
   header {
     flex-direction: row;
     padding: 15px 20px;
@@ -639,7 +641,7 @@ footer {
 
 media (max-width: 700px) {
   .welcome {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .navbar a {
@@ -730,19 +732,20 @@ media (max-width: 700px) {
     gap: 15px;
     padding: 20px 0;
   }
+  #menu-toggle:checked + .menu-icon + .navbar ul {
+    display: flex;
+  }
 
-  
-  #menu-toggle:checked + .menu-icon + nav {
+  .menu-icon {
     display: block;
+  }
+
+  .navbar li {
+    margin: 10px 0;
   }
 }
 
-
-
-
-
-
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   .header-right nav ul {
     flex-direction: column;
     gap: 10px;
@@ -752,9 +755,10 @@ media (max-width: 700px) {
   }
 
   .menu-icon {
-    display: block;
+    display: none;
   }
 }
+
 
 
 
