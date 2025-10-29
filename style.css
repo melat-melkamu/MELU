@@ -62,15 +62,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
-  flex-wrap: nowrap;
+  padding: 20px 40px;
+  flex-wrap: wrap;
   box-sizing: border-box;
   position: relative;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
-  flex-direction: row;
 }
 
 .header-left h1 {
@@ -116,24 +115,19 @@ header {
 .header-right nav ul li a:hover {
   color: #FFD700; 
 animation: shine 1.5s infinite alternate;
-}  
-.welcome {
-  margin: 0;
-  font-size: 20px;  
-  white-space: nowrap; 
 }
 
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 nav ul li {
   
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 10px;
   transition: transform 0.3s, background-color 0.3s;
 }
@@ -263,7 +257,7 @@ max-width: 1000px;
 
 
 .logo {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: bold;
   color: brown;
 }
@@ -324,7 +318,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 #about img {
@@ -549,49 +543,28 @@ footer {
                  0 0 15px rgba(255, 215, 0, 0.4),
                  0 0 20px rgba(255, 215, 0, 0.3);
 }
-@media (max-width: 700px) {
-  .welcome {
-    font-size: 10px;
-  }
 
-  .navbar a {
-    font-size: 14px;
-    padding: 3px 5px;
-  }
-
-  .navbar ul {
-    gap: 8px;
-  }
-}
 @media (max-width: 768px) {
   
-  .logo {
-    font-size: 16px; 
-  }
+  
   header {
-    flex-direction: row;
+    flex-direction: column;
     padding: 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-    
   }
 
-  .header-left h1 { 
+  .header-left h1 {
+    font-size: 32px;  
     text-align: center;
     margin-bottom: 15px;
   }
 
   .header-right {
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: -40px; 
-    
+    justify-content: center;
   }
 
   
   .menu-icon {
     display: block;
-    color: gold;
   }
 
   nav ul {
@@ -608,49 +581,27 @@ footer {
 }
   @media (max-width: 768px) {
   #about img,
-  
-    .about-photo img {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-    order: 2; /
+  .about-photo img {
+    margin: 0 auto;        
+    display: block;        
+    width: 180px;          
+    height: 180px;         
   }
-    
 
-  
-    .about-text {
-    width: 90%;
-    text-align: center;
-    order: 1; 
+  .about-text {
+    width: 90%;            
+    text-align: center;    
+    margin: 0 auto;        
   }
-    
 
-  #about { 
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-                
+  #about {
+    gap: 30px;             
   }
 }
 
 @media (hover: hover) {
   .about-photo img:hover {
     transform: scale(1.05);
-  }
-
-
-media (max-width: 700px) {
-  .welcome {
-    font-size: 10px;
-  }
-
-  .navbar a {
-    font-size: 14px;
-    padding: 3px 5px;
-  }
-
-  .navbar ul {
-    gap: 8px;
   }
 }
 
@@ -732,20 +683,19 @@ media (max-width: 700px) {
     gap: 15px;
     padding: 20px 0;
   }
-  #menu-toggle:checked + .menu-icon + .navbar ul {
-    display: flex;
-  }
 
-  .menu-icon {
+  
+  #menu-toggle:checked + .menu-icon + nav {
     display: block;
-  }
-
-  .navbar li {
-    margin: 10px 0;
   }
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+/*@media (max-width: 768px) {
   .header-right nav ul {
     flex-direction: column;
     gap: 10px;
@@ -755,13 +705,7 @@ media (max-width: 700px) {
   }
 
   .menu-icon {
-    display: none;
+    display: block;
   }
 }
-
-
-
-
-
-
 
