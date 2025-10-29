@@ -20,10 +20,8 @@ body {
   background: #000;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  padding-top: 5px;
+  padding-top: 5px
 }
-
-
 .stars {
   position: fixed;
   top: 0;
@@ -374,6 +372,12 @@ section h2 {
 .about-photo img:hover {
   transform: scale(1.05);
 }
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 
 #Contact {
@@ -401,8 +405,6 @@ section h2 {
   text-align: center;
   margin: 50px 0;
 }
-
-
 #projects {
    margin: 10px auto 50px auto;
   text-align: center;
@@ -454,8 +456,6 @@ section h2 {
 .header-nav .menu li {
   margin: 10px 0;
 }
-
-
 .year {
   font-size: 20px;
   color: #00FFCC;
@@ -553,6 +553,9 @@ footer {
     text-shadow: 0 0 8px rgba(255, 215, 0, 0.6),
                  0 0 15px rgba(255, 215, 0, 0.4),
                  0 0 20px rgba(255, 215, 0, 0.3);
+}
+@media (min-width: 768px) {
+  
 }
 
 @media (max-width: 768px) {
@@ -669,3 +672,17 @@ footer {
 @media (max-width: 360px) {
   footer { padding: 15px 5px; }
 }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
