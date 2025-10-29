@@ -549,8 +549,11 @@ footer {
   
   
   header {
-    flex-direction: column;
+    flex-direction: row;
     padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    
   }
 
   .header-left h1 { 
@@ -585,21 +588,28 @@ footer {
 }
   @media (max-width: 768px) {
   #about img,
-  .about-photo img {
-    margin: 0 auto;        
-    display: block;        
-    width: 180px;          
-    height: 180px;         
+  
+    .about-photo img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    order: 2; /
   }
+    
 
-  .about-text {
-    width: 90%;            
-    text-align: center;    
-    margin: 0 auto;        
+  
+    .about-text {
+    width: 90%;
+    text-align: center;
+    order: 1; 
   }
+    
 
-  #about {
-    gap: 30px;             
+  #about { 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+                
   }
 }
 
@@ -712,5 +722,6 @@ footer {
     display: block;
   }
 }
+
 
 
