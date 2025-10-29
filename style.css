@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -372,12 +378,6 @@ section h2 {
 .about-photo img:hover {
   transform: scale(1.05);
 }
-.container {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 
 
 #Contact {
@@ -554,9 +554,6 @@ footer {
                  0 0 15px rgba(255, 215, 0, 0.4),
                  0 0 20px rgba(255, 215, 0, 0.3);
 }
-@media (min-width: 768px) {
-  
-}
 
 @media (max-width: 768px) {
   
@@ -681,7 +678,6 @@ footer {
 
 
     
-
 
 
 
