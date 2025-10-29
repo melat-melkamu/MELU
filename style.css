@@ -20,10 +20,8 @@ body {
   background: #000;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  padding-top: 5px;
+  padding-top: 5px
 }
-
-
 .stars {
   position: fixed;
   top: 0;
@@ -674,6 +672,7 @@ footer {
 
 
     
+
 
 
 
