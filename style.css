@@ -401,6 +401,8 @@ section h2 {
   text-align: center;
   margin: 50px 0;
 }
+
+
 #projects {
    margin: 10px auto 50px auto;
   text-align: center;
@@ -452,6 +454,8 @@ section h2 {
 .header-nav .menu li {
   margin: 10px 0;
 }
+
+
 .year {
   font-size: 20px;
   color: #00FFCC;
@@ -665,22 +669,3 @@ footer {
 @media (max-width: 360px) {
   footer { padding: 15px 5px; }
 }
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
